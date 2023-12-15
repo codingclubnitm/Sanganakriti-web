@@ -4,7 +4,7 @@ import Wave from "react-wavify";
 const Hero = () => {
   return (
     <div className="text-right bg-background">
-      <div className=" flex flex-col items-center pt-64 max-w-3xl mx-auto px-10  mb-10">
+      <div className=" flex flex-col items-center pt-52 max-w-3xl mx-auto px-10  mb-10">
         <div>
           <img
             src="images/web-image.png"

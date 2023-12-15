@@ -1,4 +1,4 @@
-import Hero from 'components/HomeHero';
+import Homepage from 'pages/Homepage';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Routes>
-          <Route path="/" element={<Hero/>} />
+          <Route path="/" element={<Homepage/>} />
           
        </Routes>
 
