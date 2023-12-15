@@ -1,7 +1,7 @@
 import React from "react";
 import Wave from "react-wavify";
 
-const Homepage = () => {
+const Hero = () => {
   return (
     <div className="text-right bg-background">
       <div className=" flex flex-col items-center pt-40 mx-auto mb-10">
@@ -45,4 +45,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Hero;
