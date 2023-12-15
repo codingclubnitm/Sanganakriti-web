@@ -5,12 +5,14 @@ const Hero = () => {
   return (
     <div className="text-right bg-background">
       <div className=" flex flex-col items-center pt-40 mx-auto mb-10">
-        <img
-          src="images/web-image.png"
-          alt="website name"
-          style={{ width: "500px" }}
-        />
-        <p className="text-white pb-8">Coding Club NIT MEGHALAYA</p>
+        <div>
+          <img
+            src="images/web-image.png"
+            alt="website name"
+            style={{ width: "500px" }}
+          />
+          <p className="text-white pb-8">Coding Club NIT MEGHALAYA</p>
+        </div>
         <p className="text-white">
           "Cultivate ideas, spark creativity, and forge a collaborative space
           where members thrive
@@ -30,7 +32,6 @@ const Hero = () => {
           points: 7,
         }}
       >
-      
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
             <stop offset="10%" stopColor="#033B60" />
@@ -38,9 +39,7 @@ const Hero = () => {
           </linearGradient>
         </defs>
       </Wave>
-      <div className="bg-background p-5">
-
-      </div>
+      <div className="bg-background p-5"></div>
     </div>
   );
 };
