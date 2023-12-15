@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +36,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.cstm-button-grd {
+  margin: 10px;
+  padding: 2px 10px;
+  text-align: center;
+  transition: 0.5s;
+  display: block;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  filter: drop-shadow(15px 15px 40px #9917FF);
+}
+
+
+
+.cstm-button-grd:hover {
+  background-position: right center; 
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  filter: drop-shadow(5px 5px 30px #ee98ee);
+}
+
+.cstm-button-grd:active {
+  background-position: center;
+  opacity: 0.9;
+}
+
+.cstm-button-grd:focus {
+  border-color: white !important;
 }

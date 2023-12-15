@@ -1,21 +1,18 @@
+import Homepage from 'pages/Homepage';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-        <p >
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
-          Learn React
-       
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+          <Route path="/" element={<Homepage/>} />
+          
+       </Routes>
+
+    </>
+  )
+  
 }
 
 export default App;
