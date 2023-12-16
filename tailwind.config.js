@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+
+      fontFamily: {
+        'berkshire': ['Berkshire Swash', 'serif'],
+
       colors: {
         background: "#000000",
         // "primary-white": "#f8f9f9",
@@ -13,6 +17,7 @@ module.exports = {
         // "gray-skin": "#bcbcc4",
         // "gray": "#bdc4c4",
         // "light-gray": '#c9ced5'
+
       },
     },
   },
