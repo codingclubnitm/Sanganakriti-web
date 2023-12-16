@@ -1,21 +1,11 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-        <p >
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
-          Learn React
-       
-      </header>
+import React, { useState } from "react";
+import Events from "./Events"
+const App=()=>{
+  return(
+    <div>
+      <Events/>
     </div>
-  );
-}
+  )
+};
 
 export default App;
