@@ -1,0 +1,117 @@
+/* src/Departments.css */
+
+.departments-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.departments-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.department-card {
+    margin: 20px;
+    width: 350px;
+    height: 310px;
+    overflow: hidden;
+    border: 2px solid #34db5e;
+    border-radius: 20px;
+    position: relative;
+}
+
+.department-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .department-card.double-width {
+    width: 550px;
+} */
+
+.department-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.department-card:hover img {
+    transform: scale(1.1);
+}
+
+.department-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    padding: 5px 5px 0px 0px;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.department-info h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #000;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 15px;
+    z-index: 1; 
+}
+.department-info-content {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.department-info p {
+    display: none;
+    margin-top: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #fff;
+    font-weight:600;
+    scroll-behavior: auto;
+}
+
+.department-info strong {
+    color: #34db5e;
+}
+
+.department-card:hover .department-info {
+    transform: translateY(0);
+    height: 85%;
+}
+
+.department-card:hover .department-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+}
+
+.department-card:hover .department-info p {
+    display: block;
+    opacity: 1;
+    margin-top: 3px;
+}
