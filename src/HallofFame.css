@@ -1,14 +1,13 @@
 /* ---------Hall of Fame : Tube light Effect -------*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-.all {
+/* .all {
     position: relative;
     text-align: center;
     justify-items: center;
-}
+    width: 100vh;
+} */
 .container {
-    
-	background: #000;
-	color: #fff;
+	color: #fff; 
 }
 .container h1 {
 	font-weight: 600;
@@ -62,7 +61,7 @@
 .light::before {
 	content: "";
 	position: absolute;
-	height: 200px;
+	height: 185px;
 	width: 100%;
 	top: 0px;
 	left: 0px;

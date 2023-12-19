@@ -32,18 +32,18 @@ const Fame = () => {
     //     </div>   
     // </div>
     
-    <div class="all bg-background h-[95vh] w-full">
-        <div class="container">
-            <div>
-                <h1>HALL OF FAME</h1>
-                <h3>Winner of Quiz</h3>
+    <div class="flex justify-center bg-background pb-20">
+        <div class="container max-w-full">
+            <div class="">
+                <h1 class="flex justify-center">HALL OF FAME</h1>
+                <h3 class="flex justify-center">Winner of Quiz</h3>
             </div>
             <div>
                 <div class="light"></div>
                 <div class="tube"></div>
                 <div class="content">
                     <img src='images/frame.png' class= "frame"></img>
-                    {/* <img src='images/pic.png' class="pic"></img> */}
+                    {/* <img src='images/pic.png' class="pic "></img> */}
                 </div>
             </div>
         
