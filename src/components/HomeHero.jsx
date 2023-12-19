@@ -18,9 +18,10 @@ const Hero = () => {
       </div>
 
       <Wave
+        className="wave"
         fill="url(#gradient)"
         paused={false}
-        style={{ display: "flex", position:"absolute", bottom:0 }}
+        style={{ display: "flex", bottom:0 }}
         options={{
           height: 30,
           amplitude: 40,
@@ -36,7 +37,6 @@ const Hero = () => {
           </linearGradient>
         </defs>
       </Wave>
-      <div className="bg-background p-8"></div>
     </div>
   );
 };
