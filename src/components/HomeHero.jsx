@@ -3,8 +3,8 @@ import Wave from "react-wavify";
 
 const Hero = () => {
   return (
-    <div className="text-right bg-background">
-      <div className=" flex flex-col items-center pt-52 max-w-3xl mx-auto px-10  mb-10">
+    <div className="text-right bg-background h-[95vh]">
+      <div className=" flex flex-col items-center pt-36 max-w-3xl mx-auto px-10  mb-10">
         <div>
           <img
             src="images/web-image.png"
@@ -20,17 +20,18 @@ const Hero = () => {
       <Wave
         fill="url(#gradient)"
         paused={false}
-        style={{ display: "flex" }}
+        style={{ display: "flex", position:"absolute", bottom:0 }}
         options={{
-          height: 20,
-          amplitude: 60,
+          height: 30,
+          amplitude: 40,
           speed: 0.15,
           points: 4,
         }}
       >
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
-            <stop offset="10%" stopColor="#033B60" />
+            {/* <stop offset="5%" stopColor="#0f76ba" /> */}
+            <stop offset="30%" stopColor="#033B60" />
             <stop offset="80%" stopColor="#000000" />
           </linearGradient>
         </defs>

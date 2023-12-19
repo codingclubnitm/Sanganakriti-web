@@ -41,14 +41,14 @@
 
 .cstm-button-grd {
   margin: 10px;
-  padding: 2px 10px;
+  padding: 4px 16px 7px;
   text-align: center;
   transition: 0.5s;
   display: block;
   outline: none;
   border: 1px solid transparent;
   cursor: pointer;
-  filter: drop-shadow(15px 15px 40px #9917FF);
+  filter: drop-shadow(20px 15px 40px #9917FF);
 }
 
 
@@ -56,7 +56,8 @@
 .cstm-button-grd:hover {
   background-position: right center; 
   /* change the direction of the change here */
-  color: #fff;
+  color: rgb(65, 65, 239);
+  /* color: var(--secondaryColor); */
   text-decoration: none;
   filter: drop-shadow(5px 5px 30px #ee98ee);
 }
@@ -69,3 +70,112 @@
 .cstm-button-grd:focus {
   border-color: white !important;
 }
+
+.about {
+  /* filter: drop-shadow(5px 5px 30px #ee98ee) */
+  filter: drop-shadow(0px 20px 20px rgb(110, 110, 238));
+  filter: brightness(120px);
+}
+
+@media only screen and (max-width: 768px){
+	
+
+	header, main {
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+	main{
+		padding: 10px 4rem;
+	}
+
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+/* header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+} */
+
+/* nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+} */
+
+/* nav a:hover {
+	color: var(--secondaryColor);
+} */
+
+header .nav-btn {
+	
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+/* 
+header div,
+nav {
+	display: flex;
+	align-items: center;
+} */
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: absolute;
+		top: -136vh;
+		padding-bottom: 10px;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		justify-content: end;
+		gap: 0.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 20rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.2rem;
+	}
+}
+
+
