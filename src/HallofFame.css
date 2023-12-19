@@ -1,0 +1,94 @@
+/* ---------Hall of Fame : Tube light Effect -------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.all {
+    position: relative;
+    text-align: center;
+    justify-items: center;
+}
+.container {
+    
+	background: #000;
+	color: #fff;
+}
+.container h1 {
+	font-weight: 600;
+	font-size: 50px;
+}
+.container h3 {
+	font-size: 27px;
+}
+
+@keyframes color {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+.light, .tube {
+	position: relative;
+	margin: auto;
+	top: 100px;
+	height: 10px;
+	width: 25%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: #fff;
+	box-shadow: 
+	0px 0px 4px #fff,
+	0px 0px 40px #008998,
+	0px 20px 40px #d3fbff;
+	perspective: 160px;
+    animation: color 10s linear infinite;
+}
+.tube {
+	position: relative;
+	top: 90px;
+}
+.tube::before {
+	content: "";
+	position: absolute;
+	height: 40px;
+	width: 105%;
+	top: -40px;
+	left: -2.5%;
+	border-radius: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: linear-gradient(to right, #0d0d13, #131212);
+}
+.light::before {
+	content: "";
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	transform: scaleX(1.4) rotateX(30deg);
+	filter: blur(40px); 
+	background: linear-gradient(to bottom, #0066ff, #02d3fd96); 
+}
+
+.content {
+	/* position: relative; */
+	margin-top: 125px;
+    justify-items: center;
+}
+/* .pic {
+	position: absolute;
+    bottom: 28%;
+    left: 45.5%;
+    
+} */
+.frame {
+	/* position: absolute; */
+    height: 25%;
+    width: 25%;
+	margin: auto;
+    right: 36%;
+}
+
+
+
